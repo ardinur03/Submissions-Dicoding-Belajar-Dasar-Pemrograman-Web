@@ -1,0 +1,615 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* navbar */
+nav {
+    display: flex;
+    background-color: transparent;
+    justify-content: space-between;
+    padding: 20px 80px;
+    height: 30px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: 0.5s;
+    z-index: 20;
+}
+
+.logo img {
+    transition: 0.7s;
+    margin-top: 40px;
+}
+
+.logo-small {
+    transition: 0.7s;
+    width: 20%;
+    margin-top: -1px !important;
+}
+
+.nav-bg-primary {
+    background-color: #f8f9fa;
+    color: #fff;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.12);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 460px;
+    justify-content: space-between;
+}
+
+.nav-link a::after {
+    /* float: left;
+    border-bottom: 3px solid transparent;
+    transition: 0.5s; */
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #00d688;
+    transition: width 0.3s;
+}
+
+.nav-link a:hover::after {
+    width: 100%;
+}
+
+.nav-link a.active {
+    color: #00d688;
+}
+
+.nav-link a.active::after {
+    width: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 70px;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 2px 13px 19px 4px rgba(0, 0, 0, 0.16);
+    margin: 0px 20px;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    transition: 0.9s;
+    color: #000;
+}
+
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+    position: absolute;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 0.8em;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.text-box {
+    align-self: center;
+    text-align: center;
+    margin: auto;
+}
+
+.text-box h1 {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #000;
+}
+
+.text-box a {
+    color: white;
+}
+
+header {
+    background-image: url("../images/hero-image.jpg");
+    min-height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle .input {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -7px;
+    top: -9px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: all 0.8s;
+}
+
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+
+.menu-toggle input:checked~span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked~span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.menu-toggle input:checked~span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.card {
+    margin-top: 90px;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    height: 550px;
+    padding: 20px;
+    box-shadow: 2px 10px 15px 9px #d4d4d4;
+    height: auto;
+}
+
+.about-section {
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 2px 10px 15px 9px #d4d4d4;
+}
+
+.karnivora {
+    border-radius: 180px 2px 180px 2px;
+}
+
+.herbivora {
+    border-radius: 180px 12px 180px 2px;
+}
+
+.omnivora {
+    border-radius: 180px 12px 180px 2px;
+}
+
+.contact {
+    border-radius: 180px 12px 180px 2px;
+}
+
+.content-about {
+    margin: 50px -100px;
+}
+
+.about-image {
+    position: relative;
+}
+
+.border-radius-10 {
+    border-radius: 10px;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.about-image img {
+    position: relative;
+    border-radius: 15px;
+    height: 250px;
+    width: auto;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.about-image img:hover {
+    transition: 0.7s;
+    opacity: 0.9;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    -webkit-box-shadow: 5px 24px 38px 6px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 5px 24px 38px 6px rgba(0, 0, 0, 0.31);
+    box-shadow: 5px 24px 38px 6px rgba(0, 0, 0, 0.31);
+}
+
+.col-md .about-image img {
+    border-radius: 15px;
+    height: 250px;
+    max-width: 90%;
+}
+
+.content-hero {
+    align-items: center;
+}
+
+.hero-text {
+    text-align: center;
+    justify-content: center;
+}
+
+.p-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(75, 75, 75);
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+/* Contact section */
+#kontak {
+    margin-top: 70px;
+    padding-top: 50px;
+    height: 70vh;
+    margin-bottom: 40px;
+}
+
+.about-col {
+    flex-basis: 32%;
+    background: #00d688;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 18px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    margin: 15px;
+    font-size: 14px;
+}
+
+
+/* buat shadow pada box penjelasan */
+
+.about-col:hover {
+    box-shadow: 0 0 20px 0px #828282;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer p {
+    color: #fff;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+
+/* Responsive Breakpoint */
+
+
+/* Tablet */
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 900px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .row-about {
+        margin: 0px auto;
+    }
+    .col-md {
+        float: left !important;
+        width: 100% !important;
+    }
+    .about-image img {
+        height: 180px !important;
+    }
+    .right-content {
+        margin-left: 0rem !important;
+    }
+    .two {
+        order: 3 !important;
+    }
+    .one {
+        order: 4 !important;
+    }
+    #kontak {
+        padding-top: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: auto;
+        width: auto;
+    }
+}
+
+
+/* Phone */
+@media screen and (max-width: 576px) {
+    .logo {
+        margin-top: -30px;
+        margin-left: -50px;
+    }
+    .logo-small {
+        margin-top: 25px !important;
+        width: 30%;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    .menu-toggle span {
+        background-color: rgb(155, 155, 155);
+    }
+    nav {
+        background-color: transparent;
+        transition: 0.8s;
+    }
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 400px;
+        height: 100vh;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: #fff;
+        z-index: -2;
+        transform: translateX(100%);
+        opacity: 0;
+        transition: all 1s;
+    }
+    nav ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    nav.bg-shadow-black {
+        background-color: black;
+        width: 100%;
+        opacity: 0.4;
+        transition: 0.5s;
+    }
+    .text-box h1 {
+        font-size: 30px;
+        font-weight: 100;
+    }
+    .container-fluid {
+        margin: 0px 20px !important;
+        display: block;
+        position: relative;
+    }
+    .p-description {
+        font-size: 15px;
+    }
+    .about-image img {
+        height: 180px !important;
+    }
+    .col-md {
+        float: left !important;
+        width: 100% !important;
+    }
+    .row {
+        flex-flow: column !important;
+    }
+    .right-content {
+        margin-left: 0rem !important;
+    }
+    .two {
+        order: 3 !important;
+    }
+    .one {
+        order: 4 !important;
+    }
+    .title-section {
+        font-size: 28px !important;
+    }
+    #kontak {
+        padding-top: 40px;
+        height: auto;
+    }
+    .about-section {
+        height: auto;
+    }
+    .container-flex aside {
+        align-self: center;
+    }
+}
+
+
+/* CSS Reusesable */
+.btn {
+    border-radius: 50px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    border: 1px solid #c6cbd0;
+    cursor: pointer;
+}
+
+.bg-transparent {
+    background-color: transparent;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.bg-transparent:hover {
+    background-color: rgba(255, 255, 255, 0.789);
+    color: #000;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.border-radius-50 {
+    border-radius: 30px;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-black {
+    color: #000;
+}
+
+.container-fluid {
+    margin: 0px 50px;
+    display: block;
+    position: relative;
+}
+
+
+.container {
+    display: block;
+    position: relative;
+    margin: 0px 130px;
+}
+
+.container-flex {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.container-flex  article {
+    float: left;
+    width: 70%;
+    margin-right: 20px;
+}
+
+.container-flex aside {
+    float: right;
+    width: 30%;
+}
+
+.container-flex img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.title-section {
+    margin-top: 55px;
+    font-size: 32px;
+}
+
+.align-item-center {
+    text-align: left;
+    margin-top: 90px;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.row {
+    margin: 0 0;
+    display: flex;
+}
+
+.col {
+    float: left;
+    width: 60%;
+    padding: 0 10px;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.col-md {
+    float: left;
+    width: 50%;
+}
+
+.mt-1 {
+    margin-top: 1rem !important;
+}
+
+.mt-2 {
+    margin-top: 2rem !important;
+}
+
+.mt-3 {
+    margin-top: 3rem !important;
+}
+
+.mt-4 {
+    margin-top: 4rem !important;
+}
+
+.mt-5 {
+    margin-top: 5rem !important;
+}
+
+.ml-3 {
+    margin-left: 3rem;
+}
+
+.right-content {
+    margin-left: 3rem;
+}
+
+.indent-paragraph {
+    text-indent: 50px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-md {
+    margin-top: 20px !important;
+}
