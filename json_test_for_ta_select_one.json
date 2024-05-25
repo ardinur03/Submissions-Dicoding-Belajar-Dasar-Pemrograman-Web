@@ -1,0 +1,105 @@
+{
+  "status": true,
+  "message": "ok",
+  "data": {
+      "id_kuesioner": 1,
+      "judul": "Kuesioner 1",
+      "deskripsi": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi pariatur, quidem minima nihil at laudantium. Ea cumque aut quia quod mollitia temporibus corporis suscipit sequi exercitationem vitae! Deserunt, quaerat voluptatibus.",
+      "kuota_responden": 500,
+      "peneliti": "Ahmad Muhtadin",
+      "jumlah_pertanyaan": 6,
+      "waktu_kadaluarsa": "2024-05-25 14:30:00",
+      "detail_pertanyaan": [
+        {
+          "id_pertanyaan": 1,
+          "pertanyaan": "Pertanyaan 1",
+          "tipe_pertanyaan": "single_choice",
+          "opsi_pertanyaan": [
+            {
+              "label": "1 Buah",
+              "value": "opsi_1"
+            },
+            {
+              "label": "2 Buah",
+              "value": "opsi_2"
+            },
+            {
+              "label": "Lebih dari 2",
+              "value": "opsi_3"
+            }
+          ],
+          "urutan_pertanyaan": 1,
+          "is_required": true
+        },
+        {
+          "id_pertanyaan": 2,
+          "pertanyaan": "Pertanyaan 2",
+          "tipe_pertanyaan": "multiple_choice",
+          "opsi_pertanyaan": [
+            {
+              "label": "Android",
+              "value": "opsi_1"
+            },
+            {
+              "label": "IOS",
+              "value": "opsi_2"
+            }
+          ],
+          "urutan_pertanyaan": 2,
+          "is_required": false
+        },
+        {
+          "id_pertanyaan": 3,
+          "pertanyaan": "Pertanyaan 3",
+          "tipe_pertanyaan": "isian_singkat",
+          "opsi_pertanyaan": null,
+          "urutan_pertanyaan": 3,
+          "is_required": false
+        },
+        {
+          "id_pertanyaan": 4,
+          "pertanyaan": "Pertanyaan 4",
+          "tipe_pertanyaan": "paragraf",
+          "opsi_pertanyaan": null,
+          "urutan_pertanyaan": 4,
+          "is_required": true
+        },
+        {
+          "id_pertanyaan": 5,
+          "pertanyaan": "Pertanyaan 5",
+          "tipe_pertanyaan": "skala_linear",
+          "opsi_pertanyaan": [
+            {
+              "nilai_minimum": "1",
+              "nilai_maksimum": "5",
+              "label_nilai_minimum": "Sangat Tidak Puas",
+              "label_nilai_maksimum": "Sangat Puas"
+            }
+          ],
+          "urutan_pertanyaan": 5,
+          "is_required": true
+        },
+        {
+          "id_pertanyaan": 6,
+          "pertanyaan": "Pertanyaan 6",
+          "tipe_pertanyaan": "prioritas",
+          "opsi_pertanyaan": [
+            {
+              "label": "Bermain Game",
+              "value": "opsi_1"
+            },
+            {
+              "label": "Menonton Film",
+              "value": "opsi_2"
+            },
+            {
+              "label": "Membuka Media Sosial",
+              "value": "opsi_3"
+            }
+          ],
+          "urutan_pertanyaan": 6,
+          "is_required": true
+        }
+      ]
+    }
+}
