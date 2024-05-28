@@ -1,0 +1,80 @@
+{
+    "status": true,
+    "message": "ok",
+    "data": {
+        "minat": [
+            {
+                "id_aplikasi_digital": 1,
+                "nama_aplikasi_digital": "Whatsapp"
+            },
+            {
+                "id_aplikasi_digital": 2,
+                "nama_aplikasi_digital": "Facebook"
+            },
+            {
+                "id_aplikasi_digital": 3,
+                "nama_aplikasi_digital": "Line"
+            },
+            {
+                "id_aplikasi_digital": 4,
+                "nama_aplikasi_digital": "Telegram"
+            },
+            {
+                "id_aplikasi_digital": 5,
+                "nama_aplikasi_digital": "Instagram"
+            },
+            {
+                "id_aplikasi_digital": 6,
+                "nama_aplikasi_digital": "X"
+            },
+            {
+                "id_aplikasi_digital": 7,
+                "nama_aplikasi_digital": "Tiktok"
+            },
+            {
+                "id_aplikasi_digital": 8,
+                "nama_aplikasi_digital": "Shopee"
+            },
+            {
+                "id_aplikasi_digital": 9,
+                "nama_aplikasi_digital": "Tokopedia"
+            },
+            {
+                "id_aplikasi_digital": 10,
+                "nama_aplikasi_digital": "Lazada"
+            },
+            {
+                "id_aplikasi_digital": 11,
+                "nama_aplikasi_digital": "Akulaku"
+            },
+            {
+                "id_aplikasi_digital": 12,
+                "nama_aplikasi_digital": "Bukalapak"
+            },
+            {
+                "id_aplikasi_digital": 13,
+                "nama_aplikasi_digital": "Blibli"
+            },
+            {
+                "id_aplikasi_digital": 14,
+                "nama_aplikasi_digital": "Zalora"
+            },
+            {
+                "id_aplikasi_digital": 15,
+                "nama_aplikasi_digital": "GoPay"
+            },
+            {
+                "id_aplikasi_digital": 16,
+                "nama_aplikasi_digital": "Dana"
+            },
+            {
+                "id_aplikasi_digital": 17,
+                "nama_aplikasi_digital": "OVO"
+            },
+            {
+                "id_aplikasi_digital": 18,
+                "nama_aplikasi_digital": "Shopee Pay"
+            }
+        ]
+    }
+}
