@@ -2,7 +2,7 @@
     "status": true,
     "message": "ok",
     "data": {
-        "minat": [
+        "aplikasi_digital": [
             {
                 "id_aplikasi_digital": 1,
                 "nama_aplikasi_digital": "Whatsapp"
