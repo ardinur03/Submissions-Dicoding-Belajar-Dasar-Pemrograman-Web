@@ -1,0 +1,177 @@
+{
+    "status": true,
+    "message": "ok",
+    "data": [
+        {
+            "id_kuesioner": 1,
+            "judul": "Kuesioner 1",
+            "deskripsi": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi pariatur, quidem minima nihil at laudantium. Ea cumque aut quia quod mollitia temporibus corporis suscipit sequi exercitationem vitae! Deserunt, quaerat voluptatibus.",
+            "kuota_responden": 500,
+            "peneliti": "Ahmad Muhtadin",
+            "jumlah_pertanyaan": 6,
+            "waktu_kadaluarsa": "2024-05-25 14:30:00",
+            "detail_pertanyaan": [
+                {
+                    // Jawaban Singkat
+                    "id_pertanyaan": 1,
+                    "pertanyaan": "Ini pertanyaan jawaban singkat",
+                    "tipe_pertanyaan": "Jawaban Singkat",
+                    "opsi_pertanyaan": null,
+                    "urutan_pertanyaan": 1,
+                    "is_required": true
+                },
+                {
+                    // Paragraf
+                    "id_pertanyaan": 2,
+                    "pertanyaan": "Ini pertanyaan paragraf",
+                    "tipe_pertanyaan": "Paragraf",
+                    "opsi_pertanyaan": null,
+                    "urutan_pertanyaan": 2,
+                    "is_required": true
+                },
+                {
+                    // Single Choice
+                    "id_pertanyaan": 3,
+                    "pertanyaan": "Ini pertanyaan single choice",
+                    "tipe_pertanyaan": "Single Choice",
+                    "opsi_pertanyaan": [
+                        {
+                            "nilai_opsi": "Opsi 1",
+                            "urutan_opsi": 1
+                        },
+                        {
+                            "nilai_opsi": "Opsi 2",
+                            "urutan_opsi": 2
+                        },
+                        {
+                            "nilai_opsi": "Opsi 3",
+                            "urutan_opsi": 3
+                        }
+                    ],
+                    "urutan_pertanyaan": 3,
+                    "is_required": true
+                },
+                {
+                    // Multiple Choice
+                    "id_pertanyaan": 4,
+                    "pertanyaan": "Ini pertanyaan multiple choice",
+                    "tipe_pertanyaan": "Multiple Choice",
+                    "opsi_pertanyaan": [
+                        {
+                            "nilai_opsi": "Opsi 1",
+                            "urutan_opsi": 1
+                        },
+                        {
+                            "nilai_opsi": "Opsi 2",
+                            "urutan_opsi": 2
+                        },
+                        {
+                            "nilai_opsi": "Opsi 3",
+                            "urutan_opsi": 3
+                        },
+                        {
+                            "nilai_opsi": "Opsi 4",
+                            "urutan_opsi": 4
+                        },
+                        {
+                            "nilai_opsi": "Opsi 5",
+                            "urutan_opsi": 5
+                        }
+                    ],
+                    "urutan_pertanyaan": 4,
+                    "is_required": true
+                },
+                {
+                    // Skala Linier
+                    "id_pertanyaan": 5,
+                    "pertanyaan": "Ini pertanyaan skala linier",
+                    "tipe_pertanyaan": "Skala Linier",
+                    "opsi_pertanyaan": {
+                        "nilai_minimum": "1",
+                        "nilai_maksimum": "5",
+                        "label_minimum": "Sangat Rendah",
+                        "label_maksimum": "Sangat Tinggi"
+                    },
+                    "urutan_pertanyaan": 5,
+                    "is_required": true
+                },
+                {
+                    // Prioritas
+                    "id_pertanyaan": 6,
+                    "pertanyaan": "Ini pertanyaan prioritas",
+                    "tipe_pertanyaan": "Prioritas",
+                    "opsi_pertanyaan": [
+                        {
+                            "nilai_opsi": "Opsi 1",
+                            "urutan_opsi": 1
+                        },
+                        {
+                            "nilai_opsi": "Opsi 2",
+                            "urutan_opsi": 2
+                        },
+                        {
+                            "nilai_opsi": "Opsi 3",
+                            "urutan_opsi": 3
+                        },
+                        {
+                            "nilai_opsi": "Opsi 4",
+                            "urutan_opsi": 4
+                        }
+                    ],
+                    "urutan_pertanyaan": 6,
+                    "is_required": true
+                }
+            ]
+        },
+        {
+            "id_kuesioner": 2,
+            "judul": "Kuesioner 1",
+            "deskripsi": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi pariatur, quidem minima nihil at laudantium. Ea cumque aut quia quod mollitia temporibus corporis suscipit sequi exercitationem vitae! Deserunt, quaerat voluptatibus.",
+            "kuota_responden": 500,
+            "peneliti": "Ahmad Muhtadin",
+            "jumlah_pertanyaan": 2,
+            "waktu_kadaluarsa": "2024-05-25 14:30:00",
+            "detail_pertanyaan": [
+                {
+                    // Paragraf
+                    "id_pertanyaan": 7,
+                    "pertanyaan": "Ini pertanyaan paragraf",
+                    "tipe_pertanyaan": "Paragraf",
+                    "opsi_pertanyaan": null,
+                    "urutan_pertanyaan": 2,
+                    "is_required": true
+                },
+                {
+                    // Multiple Choice
+                    "id_pertanyaan": 8,
+                    "pertanyaan": "Ini pertanyaan multiple choice",
+                    "tipe_pertanyaan": "Multiple Choice",
+                    "opsi_pertanyaan": [
+                        {
+                            "nilai_opsi": "Opsi 1",
+                            "urutan_opsi": 1
+                        },
+                        {
+                            "nilai_opsi": "Opsi 2",
+                            "urutan_opsi": 2
+                        },
+                        {
+                            "nilai_opsi": "Opsi 3",
+                            "urutan_opsi": 3
+                        },
+                        {
+                            "nilai_opsi": "Opsi 4",
+                            "urutan_opsi": 4
+                        },
+                        {
+                            "nilai_opsi": "Opsi 5",
+                            "urutan_opsi": 5
+                        }
+                    ],
+                    "urutan_pertanyaan": 4,
+                    "is_required": true
+                }
+            ]
+        }
+    ]
+}
